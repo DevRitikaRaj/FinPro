@@ -1,0 +1,15 @@
+# System/IDE Directories
+.gemini/
+.agents/
+.vscode/
+.idea/
+
+# Local Dev/Build outputs
+node_modules/
+dist/
+build/
+*.log
+
+# OS Metadata
+.DS_Store
+Thumbs.db
