@@ -7,7 +7,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-GBXLVTLXBZ');
     </script>
     <!-- Google AdSense -->
@@ -15,28 +14,31 @@
          crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free online financial calculators — SIP, Loan EMI, FD, RD, Mutual Fund, Income Tax, GST & Currency Converter. Accurate, fast, and easy to use.">
-    <meta name="keywords" content="SIP calculator, loan calculator, EMI calculator, FD calculator, RD calculator, mutual fund calculator, income tax calculator, GST calculator, currency converter, financial tools">
-    <meta name="author" content="FinCalc Pro">
+    <title>FinCalc Pro — Free Financial Calculators & Wealth Planning Tools | DevToolHubs</title>
+    <meta name="description" content="Free online financial calculators — SIP, Loan EMI, FD, RD, Mutual Fund, Income Tax, GST & Currency Converter. Accurate, fast, and 100% free financial planning utilities.">
+    <meta name="keywords" content="financial calculators, SIP calculator, loan EMI calculator, home loan EMI, FD calculator, RD calculator, income tax calculator FY 2025-26, GST calculator, currency converter, DevToolHubs">
+    <meta name="author" content="FinCalc Pro | DevToolHubs">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0a0e1a">
+    <meta name="theme-color" content="#060a14">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="FinCalc Pro — Free Financial Calculators & Tools">
-    <meta property="og:description" content="Free online financial calculators — SIP, Loan EMI, FD, RD, Mutual Fund, Income Tax, GST & Currency Converter.">
+    <meta property="og:title" content="FinCalc Pro — Free Financial Calculators & Wealth Planning Tools | DevToolHubs">
+    <meta property="og:description" content="Free online financial calculators — SIP, Loan EMI, FD, RD, Mutual Fund, Income Tax, GST & Currency Converter. Accurate, fast, and 100% free financial planning utilities.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devtoolhubs.info/">
     <meta property="og:site_name" content="FinCalc Pro">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FinCalc Pro — Free Financial Calculators & Tools">
-    <meta name="twitter:description" content="Free online financial calculators — SIP, Loan EMI, FD, RD, Mutual Fund, Income Tax, GST & Currency Converter.">
+    <meta name="twitter:title" content="FinCalc Pro — Free Financial Calculators & Wealth Planning Tools | DevToolHubs">
+    <meta name="twitter:description" content="Free online financial calculators — SIP, Loan EMI, FD, RD, Mutual Fund, Income Tax, GST & Currency Converter. Accurate, fast, and 100% free financial planning utilities.">
 
-    <title>FinCalc Pro — Free Financial Calculators & Tools</title>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://devtoolhubs.info/">
 
     <!-- Favicon (inline SVG) -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='18' width='100' height='100' fill='%230a0e1a'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='%23f0b429' font-family='sans-serif' font-weight='bold'>F</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='18' width='100' height='100' fill='%23060a14'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='%23f0b429' font-family='sans-serif' font-weight='bold'>F</text></svg>">
 
     <!-- Google Fonts — Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,39 +46,477 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
 
-    <!-- Canonical (updated dynamically) -->
-    <link rel="canonical" href="">
-
-    <!-- JSON-LD Structured Data — WebSite -->
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "FinCalc Pro",
-        "description": "Free online financial calculators and tools.",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "/#/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "FinCalc Pro — Free Financial Calculators & Tools | DevToolHubs",
+  "url": "https://devtoolhubs.info/",
+  "description": "Free online financial calculators — SIP, Loan EMI, FD, RD, Mutual Fund, Income Tax, GST & Currency Converter. Accurate, fast, and easy to use.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://devtoolhubs.info/#calculators",
+    "query-input": "required name=search_term_string"
+  }
+}
     </script>
 </head>
 <body>
     <div id="app">
-        <!-- Loading screen shown before JS loads -->
-        <div class="initial-loader">
-            <div class="loader-logo">
-                <span class="loader-icon">F</span>
-                <span class="loader-text">FinCalc Pro</span>
-            </div>
-            <div class="loader-spinner"></div>
+        
+    <header class="site-header" id="site-header">
+        <div class="header-inner">
+            <a href="/" class="header-logo" data-nav>
+                <span class="logo-icon">F</span>
+                <span class="logo-text">Fin<span>Calc</span> Pro</span>
+            </a>
+
+            <nav class="header-nav" id="header-nav">
+                <a href="/" class="nav-link active" data-nav>Home</a>
+                <div class="nav-dropdown">
+                    <a href="/#calculators" class="nav-link ">
+                        Calculators <span style="font-size:10px;margin-left:2px">▼</span>
+                    </a>
+                    <div class="dropdown-menu" id="calc-dropdown">
+                        
+        <a href="/calculators/sip.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">📈</span>
+            <span>SIP Calculator</span>
+        </a>
+    
+        <a href="/calculators/loan.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">🏦</span>
+            <span>Loan Calculator</span>
+        </a>
+    
+        <a href="/calculators/home-loan-emi.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">🏠</span>
+            <span>Home Loan EMI Calculator</span>
+        </a>
+    
+        <a href="/calculators/personal-loan-emi.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">💳</span>
+            <span>Personal Loan EMI Calculator</span>
+        </a>
+    
+        <a href="/calculators/fd.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">🔒</span>
+            <span>FD Calculator</span>
+        </a>
+    
+        <a href="/calculators/rd.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">🪙</span>
+            <span>RD Calculator</span>
+        </a>
+    
+        <a href="/calculators/mutual-fund.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">📊</span>
+            <span>Mutual Fund Returns Calculator</span>
+        </a>
+    
+        <a href="/calculators/income-tax.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">📋</span>
+            <span>Income Tax Calculator</span>
+        </a>
+    
+        <a href="/calculators/gst.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">🧾</span>
+            <span>GST Calculator</span>
+        </a>
+    
+        <a href="/calculators/currency-converter.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">💱</span>
+            <span>Currency Converter</span>
+        </a>
+    
+                    </div>
+                </div>
+                <a href="/about.html" class="nav-link " data-nav>About</a>
+                <a href="/contact.html" class="nav-link " data-nav>Contact</a>
+            </nav>
+
+            <button class="header-search-btn" id="search-btn" type="button" aria-label="Search calculators">
+                <span>🔍 Search…</span>
+                <kbd class="search-kbd">Ctrl+K</kbd>
+            </button>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" type="button" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
+
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="/" class="mobile-nav-link" data-nav>🏠 Home</a>
+            <a href="/about.html" class="mobile-nav-link" data-nav>ℹ️ About</a>
+            <a href="/contact.html" class="mobile-nav-link" data-nav>✉️ Contact</a>
+            <div class="mobile-nav-section-title">Calculators</div>
+            
+                <a href="/calculators/sip.html" class="mobile-nav-link" data-nav>📈 SIP Calculator</a>
+            
+                <a href="/calculators/loan.html" class="mobile-nav-link" data-nav>🏦 Loan Calculator</a>
+            
+                <a href="/calculators/home-loan-emi.html" class="mobile-nav-link" data-nav>🏠 Home Loan EMI Calculator</a>
+            
+                <a href="/calculators/personal-loan-emi.html" class="mobile-nav-link" data-nav>💳 Personal Loan EMI Calculator</a>
+            
+                <a href="/calculators/fd.html" class="mobile-nav-link" data-nav>🔒 FD Calculator</a>
+            
+                <a href="/calculators/rd.html" class="mobile-nav-link" data-nav>🪙 RD Calculator</a>
+            
+                <a href="/calculators/mutual-fund.html" class="mobile-nav-link" data-nav>📊 Mutual Fund Returns Calculator</a>
+            
+                <a href="/calculators/income-tax.html" class="mobile-nav-link" data-nav>📋 Income Tax Calculator</a>
+            
+                <a href="/calculators/gst.html" class="mobile-nav-link" data-nav>🧾 GST Calculator</a>
+            
+                <a href="/calculators/currency-converter.html" class="mobile-nav-link" data-nav>💱 Currency Converter</a>
+            
+        </nav>
+    </header>
+        
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-modal">
+            <div class="search-modal-input-wrap">
+                <span>🔍</span>
+                <input type="text" class="search-modal-input" id="search-input"
+                       placeholder="Search calculators…" autocomplete="off">
+                <kbd class="search-kbd" style="cursor:pointer" id="search-close">Esc</kbd>
+            </div>
+            <div class="search-results" id="search-results"></div>
+        </div>
+    </div>
+        <main id="main-content">
+            
+            
+    <section class="hero">
+        <div class="container animate-fade-up">
+            <div class="hero-badge">
+                <span class="badge-dot">✦</span>
+                Free & Accurate Financial Tools
+            </div>
+            <h1>Smart Money Decisions<br>Start with <span class="text-gold">Better Calculations</span></h1>
+            <p class="hero-subtitle">Plan your investments, loans, and taxes with our suite of 10+ free financial calculators. Trusted by thousands for accuracy and simplicity.</p>
+            <div class="hero-actions">
+                <a href="/calculators/sip.html" class="btn btn-primary btn-lg" data-nav>Try SIP Calculator</a>
+                <a href="/about.html" class="btn btn-secondary btn-lg" data-nav>Learn More</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number">10+</div>
+                    <div class="hero-stat-label">Free Calculators</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">100%</div>
+                    <div class="hero-stat-label">Free to Use</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">0</div>
+                    <div class="hero-stat-label">Signup Required</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="calculators">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Tools</span>
+                <h2 class="section-title">Financial Calculators</h2>
+                <p class="section-subtitle">From investments to taxes, we've got every calculation covered. Pick a tool and start planning.</p>
+            </div>
+            <div class="calc-grid stagger-children">
+                
+        <a href="/calculators/sip.html" class="calc-card" data-nav>
+            <div class="calc-card-icon">📈</div>
+            <h3>SIP Calculator</h3>
+            <p>Calculate returns on your Systematic Investment Plan (SIP) and watch your investments grow over time.</p>
+            <span class="calc-card-cta">Calculate now →</span>
+        </a>
+    
+        <a href="/calculators/loan.html" class="calc-card" data-nav>
+            <div class="calc-card-icon">🏦</div>
+            <h3>Loan Calculator</h3>
+            <p>Compute EMI, total interest, and amortization schedules for any type of loan with flexible tenure options.</p>
+            <span class="calc-card-cta">Calculate now →</span>
+        </a>
+    
+        <a href="/calculators/home-loan-emi.html" class="calc-card" data-nav>
+            <div class="calc-card-icon">🏠</div>
+            <h3>Home Loan EMI Calculator</h3>
+            <p>Plan your dream home purchase by calculating monthly EMIs, total interest, and year-wise breakdowns.</p>
+            <span class="calc-card-cta">Calculate now →</span>
+        </a>
+    
+        <a href="/calculators/personal-loan-emi.html" class="calc-card" data-nav>
+            <div class="calc-card-icon">💳</div>
+            <h3>Personal Loan EMI Calculator</h3>
+            <p>Find your personal loan EMI instantly. Compare scenarios with and without prepayment.</p>
+            <span class="calc-card-cta">Calculate now →</span>
+        </a>
+    
+        <a href="/calculators/fd.html" class="calc-card" data-nav>
+            <div class="calc-card-icon">🔒</div>
+            <h3>FD Calculator</h3>
+            <p>Calculate maturity amount and interest earned on your Fixed Deposit with various compounding options.</p>
+            <span class="calc-card-cta">Calculate now →</span>
+        </a>
+    
+        <a href="/calculators/rd.html" class="calc-card" data-nav>
+            <div class="calc-card-icon">🪙</div>
+            <h3>RD Calculator</h3>
+            <p>Estimate your Recurring Deposit maturity value and total interest earned over the investment period.</p>
+            <span class="calc-card-cta">Calculate now →</span>
+        </a>
+    
+        <a href="/calculators/mutual-fund.html" class="calc-card" data-nav>
+            <div class="calc-card-icon">📊</div>
+            <h3>Mutual Fund Returns Calculator</h3>
+            <p>Project your mutual fund returns for both SIP and lumpsum investments with growth visualization.</p>
+            <span class="calc-card-cta">Calculate now →</span>
+        </a>
+    
+        <a href="/calculators/income-tax.html" class="calc-card" data-nav>
+            <div class="calc-card-icon">📋</div>
+            <h3>Income Tax Calculator</h3>
+            <p>Calculate your income tax liability under both Old and New tax regimes. Compare and save more.</p>
+            <span class="calc-card-cta">Calculate now →</span>
+        </a>
+    
+        <a href="/calculators/gst.html" class="calc-card" data-nav>
+            <div class="calc-card-icon">🧾</div>
+            <h3>GST Calculator</h3>
+            <p>Quickly add or remove GST from any amount. Get CGST/SGST split for all standard GST rates.</p>
+            <span class="calc-card-cta">Calculate now →</span>
+        </a>
+    
+        <a href="/calculators/currency-converter.html" class="calc-card" data-nav>
+            <div class="calc-card-icon">💱</div>
+            <h3>Currency Converter</h3>
+            <p>Convert between major world currencies with indicative exchange rates and popular conversion pairs.</p>
+            <span class="calc-card-cta">Calculate now →</span>
+        </a>
+    
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Choose Us</span>
+                <h2 class="section-title">Built for Accuracy & Simplicity</h2>
+                <p class="section-subtitle">We obsess over getting the details right so you can focus on making the right decisions.</p>
+            </div>
+            <div class="features-grid stagger-children">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Precise Calculations</h3>
+                    <p>Every formula is validated against industry standards. Your results are accurate to the last rupee.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Results</h3>
+                    <p>No loading, no waiting. Get real-time calculations as you adjust your inputs with interactive sliders.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Visual Charts</h3>
+                    <p>Beautiful donut and bar charts help you visualize your financial data at a glance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% Private</h3>
+                    <p>All calculations happen in your browser. We never store your financial data on any server.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Use our tools on any device — phone, tablet, or desktop. Fully responsive design.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🆓</div>
+                    <h3>Always Free</h3>
+                    <p>No subscriptions, no hidden fees, no signup walls. Every tool is free to use, forever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Getting Started</span>
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Three simple steps to smarter financial planning.</p>
+            </div>
+            <div class="steps-grid stagger-children">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Choose a Calculator</h3>
+                    <p>Browse our collection of 10+ free financial calculators and select the one you need.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Enter Your Details</h3>
+                    <p>Use sliders or input fields to enter amounts, rates, and time periods. Adjust in real-time.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Get Your Results</h3>
+                    <p>View detailed results with charts, breakdowns, and actionable insights instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="guide">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Financial Literacy</span>
+                <h2 class="section-title">Mastering Your Personal Finances</h2>
+                <p class="section-subtitle">Actionable frameworks and proven principles to build sustainable wealth, eliminate debt, and optimize taxes.</p>
+            </div>
+            <div class="content-section" style="max-width:900px;margin:0 auto var(--space-8)">
+                <h2>The 50/30/20 Budgeting Rule</h2>
+                <p>One of the most effective personal finance guidelines is the 50/30/20 budgeting framework popularized by Senator Elizabeth Warren. It breaks down your net post-tax income into three distinct pillars:</p>
+                <ul>
+                    <li><strong>50% for Needs:</strong> Essential living expenses including rent or home loan EMI, groceries, utilities, basic insurance, and transportation.</li>
+                    <li><strong>30% for Wants:</strong> Discretionary spending that enhances quality of life, such as dining out, hobbies, streaming subscriptions, vacations, and shopping.</li>
+                    <li><strong>20% for Savings & Debt Reduction:</strong> High-priority savings including emergency funds, retirement accounts, mutual fund SIPs, and accelerated loan repayments.</li>
+                </ul>
+
+                <h2>The Miracle of Compound Interest</h2>
+                <p>Albert Einstein famously remarked that compound interest is the eighth wonder of the world. In traditional simple interest, earnings remain flat because interest is computed only on the principal amount. In compound interest, your earnings generate their own earnings in subsequent periods.</p>
+                <div class="formula-box">A = P × (1 + r/n)^(n×t)</div>
+                <p>The single most dominant variable in compounding is not the amount of capital, but <strong>time</strong>. An investor starting a monthly SIP of ₹5,000 at age 25 will accumulate significantly more wealth by age 55 than an investor contributing ₹10,000 monthly starting at age 35, even though the late investor deposits more principal.</p>
+
+                <h2>Smart Debt Management: Snowball vs. Avalanche</h2>
+                <p>When repaying multiple debts (personal loans, credit card balances, car loans), choosing a structured methodology keeps you disciplined and reduces financial stress:</p>
+                <ul>
+                    <li><strong>The Debt Avalanche Method:</strong> Focuses on paying off the debt with the highest interest rate first while paying minimums on others. Mathematically, this minimizes total interest paid.</li>
+                    <li><strong>The Debt Snowball Method:</strong> Focuses on eliminating the smallest loan balance first regardless of interest rate. This delivers rapid psychological wins and momentum.</li>
+                </ul>
+
+                <h2>Tax Planning & Regime Optimization</h2>
+                <p>Taxes are often the single largest annual expense for salaried and self-employed professionals. Under the latest fiscal policies, evaluating whether the Old Regime or the New Tax Regime is more advantageous requires comparing your eligible Chapter VI-A deductions (Section 80C, 80D, HRA, home loan interest) against the concessional tax slabs of the New Regime. Use our dedicated <a href="/calculators/income-tax.html">Income Tax Calculator</a> to determine your optimal choice.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions regarding our calculation algorithms, data security, and tool accuracy.</p>
+            </div>
+            <div style="max-width:900px;margin:0 auto">
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('open')">
+                            <span>Are the calculations on FinCalc Pro completely accurate?</span>
+                            <span class="faq-chevron">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes. All calculation models use standard banking algorithms and recognized financial formulas (such as reducing-balance EMI models, compound interest formulas, and official tax slabs). For precise institutional figures, factors such as loan processing fees and bank-specific rounding may cause minor variances.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('open')">
+                            <span>Is my personal or financial data stored on your servers?</span>
+                            <span class="faq-chevron">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">No. DevToolHubs / FinCalc Pro operates on a 100% client-side execution model. All calculations, numbers, and inputs are processed locally in your browser memory. We never store, log, or transmit your financial inputs to any remote server.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('open')">
+                            <span>Can I use these calculators on my smartphone or tablet?</span>
+                            <span class="faq-chevron">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes. Every calculator is designed with a responsive interface that adapts seamlessly to desktop monitors, tablets, and mobile smartphones with touch-friendly sliders and instant dynamic charts.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('open')">
+                            <span>Are these financial tools completely free to use?</span>
+                            <span class="faq-chevron">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes. All 10+ calculators and educational resources are 100% free with no subscriptions, premium tiers, or registration requirements.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        </main>
+        
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="header-logo" data-nav style="margin-bottom:4px;display:inline-flex">
+                        <span class="logo-icon">F</span>
+                        <span class="logo-text">Fin<span>Calc</span> Pro</span>
+                    </a>
+                    <p>Free, accurate financial calculators trusted by thousands. Make smarter money decisions with our easy-to-use tools at devtoolhubs.info.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter" title="Twitter">𝕏</a>
+                        <a href="#" aria-label="Facebook" title="Facebook">f</a>
+                        <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
+                        <a href="#" aria-label="YouTube" title="YouTube">▶</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Calculators</h4>
+                    <ul><li><a href="/calculators/sip.html" data-nav>SIP Calculator</a></li><li><a href="/calculators/loan.html" data-nav>Loan Calculator</a></li><li><a href="/calculators/home-loan-emi.html" data-nav>Home Loan EMI Calculator</a></li><li><a href="/calculators/personal-loan-emi.html" data-nav>Personal Loan EMI Calculator</a></li><li><a href="/calculators/fd.html" data-nav>FD Calculator</a></li><li><a href="/calculators/rd.html" data-nav>RD Calculator</a></li></ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about.html" data-nav>About Us</a></li>
+                        <li><a href="/contact.html" data-nav>Contact Us</a></li>
+                        <li><a href="/sitemap.html" data-nav>Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul><li><a href="/privacy-policy.html" data-nav>Privacy Policy</a></li><li><a href="/terms-conditions.html" data-nav>Terms & Conditions</a></li><li><a href="/disclaimer.html" data-nav>Disclaimer</a></li><li><a href="/cookie-policy.html" data-nav>Cookie Policy</a></li><li><a href="/dmca-policy.html" data-nav>DMCA Policy</a></li></ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 FinCalc Pro (devtoolhubs.info). All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="/privacy-policy.html" data-nav>Privacy</a>
+                    <a href="/terms-conditions.html" data-nav>Terms</a>
+                    <a href="/disclaimer.html" data-nav>Disclaimer</a>
+                    <a href="/sitemap.html" data-nav>Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    <div class="cookie-consent" id="cookie-consent">
+        <h4>🍪 Cookie Notice</h4>
+        <p>We use cookies to improve your experience. By continuing to use this site, you agree to our <a href="#/cookie-policy" data-nav>Cookie Policy</a>.</p>
+        <div class="cookie-consent-actions">
+            <button class="btn btn-primary btn-sm" id="cookie-accept">Accept All</button>
+            <button class="btn btn-secondary btn-sm" id="cookie-decline">Decline</button>
+        </div>
+    </div>
     </div>
 
     <!-- App Scripts (ES Modules) -->
-    <script type="module" src="js/app.js"></script>
+    <script type="module" src="/js/page-init.js"></script>
 </body>
 </html>

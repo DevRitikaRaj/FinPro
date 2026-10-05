@@ -11,7 +11,7 @@ function calcPage(id, content, initFn) {
     const calc = CALCULATORS.find(c => c.id === id);
     updateMeta(calc.name, calc.description);
     // Schedule init after DOM render
-    setTimeout(() => { if (initFn) initFn(); }, 50);
+    if (typeof window !== 'undefined') { setTimeout(() => { if (initFn) initFn(); }, 50); }
     return `<div class="calc-page"><div class="container">${content}</div></div>`;
 }
 
@@ -117,7 +117,7 @@ export function renderSIPCalculator() {
     `, initSIPCalculator);
 }
 
-function initSIPCalculator() {
+export function initSIPCalculator() {
     const amtSlider = document.getElementById('sip-amount');
     const rateSlider = document.getElementById('sip-rate');
     const yearsSlider = document.getElementById('sip-years');
@@ -237,7 +237,7 @@ export function renderLoanCalculator() {
     `, initLoanCalculator);
 }
 
-function initLoanCalculator() {
+export function initLoanCalculator() {
     const amtSlider = document.getElementById('loan-amount');
     const rateSlider = document.getElementById('loan-rate');
     const tenureSlider = document.getElementById('loan-tenure');
@@ -352,7 +352,7 @@ export function renderHomeLoanEMI() {
     `, initHomeLoanCalculator);
 }
 
-function initHomeLoanCalculator() {
+export function initHomeLoanCalculator() {
     const priceSlider = document.getElementById('hl-price');
     const downSlider = document.getElementById('hl-down');
     const rateSlider = document.getElementById('hl-rate');
@@ -467,7 +467,7 @@ export function renderPersonalLoanEMI() {
     `, initPersonalLoanCalculator);
 }
 
-function initPersonalLoanCalculator() {
+export function initPersonalLoanCalculator() {
     const amtSlider = document.getElementById('pl-amount');
     const rateSlider = document.getElementById('pl-rate');
     const tenureSlider = document.getElementById('pl-tenure');
@@ -585,7 +585,7 @@ export function renderFDCalculator() {
     `, initFDCalculator);
 }
 
-function initFDCalculator() {
+export function initFDCalculator() {
     const amtSlider = document.getElementById('fd-amount');
     const rateSlider = document.getElementById('fd-rate');
     const tenureSlider = document.getElementById('fd-tenure');
@@ -694,7 +694,7 @@ export function renderRDCalculator() {
     `, initRDCalculator);
 }
 
-function initRDCalculator() {
+export function initRDCalculator() {
     const amtSlider = document.getElementById('rd-amount');
     const rateSlider = document.getElementById('rd-rate');
     const tenureSlider = document.getElementById('rd-tenure');
@@ -809,7 +809,7 @@ export function renderMutualFundCalculator() {
 }
 
 let mfMode = 'sip';
-function initMutualFundCalculator() {
+export function initMutualFundCalculator() {
     const amtSlider = document.getElementById('mf-amount');
     const rateSlider = document.getElementById('mf-rate');
     const yearsSlider = document.getElementById('mf-years');
@@ -974,7 +974,7 @@ export function renderIncomeTaxCalculator() {
     `, initIncomeTaxCalculator);
 }
 
-function initIncomeTaxCalculator() {
+export function initIncomeTaxCalculator() {
     const incomeSlider = document.getElementById('tax-income');
     const dedSlider = document.getElementById('tax-deductions');
     if (!incomeSlider) return;
@@ -1118,7 +1118,7 @@ export function renderGSTCalculator() {
 }
 
 let gstMode = 'add';
-function initGSTCalculator() {
+export function initGSTCalculator() {
     const amtInput = document.getElementById('gst-amount');
     if (!amtInput) return;
 
@@ -1248,7 +1248,7 @@ export function renderCurrencyConverter() {
     `, initCurrencyConverter);
 }
 
-function initCurrencyConverter() {
+export function initCurrencyConverter() {
     const amtInput = document.getElementById('cc-amount');
     const fromSelect = document.getElementById('cc-from');
     const toSelect = document.getElementById('cc-to');

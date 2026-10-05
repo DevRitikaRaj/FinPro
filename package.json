@@ -1,0 +1,18 @@
+{
+  "name": "fincalc-pro",
+  "version": "1.0.0",
+  "description": "Free Financial Calculators & Tools for devtoolhubs.info",
+  "scripts": {
+    "build": "node scripts/build-static.mjs",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "financial-calculator",
+    "sip-calculator",
+    "loan-calculator",
+    "emi-calculator",
+    "tax-calculator"
+  ],
+  "author": "FinCalc Pro",
+  "license": "MIT"
+}

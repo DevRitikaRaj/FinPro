@@ -28,8 +28,8 @@ export function renderHome() {
             <h1>Smart Money Decisions<br>Start with <span class="text-gold">Better Calculations</span></h1>
             <p class="hero-subtitle">Plan your investments, loans, and taxes with our suite of 10+ free financial calculators. Trusted by thousands for accuracy and simplicity.</p>
             <div class="hero-actions">
-                <a href="#/calculators/sip" class="btn btn-primary btn-lg" data-nav>Try SIP Calculator</a>
-                <a href="#/about" class="btn btn-secondary btn-lg" data-nav>Learn More</a>
+                <a href="/calculators/sip.html" class="btn btn-primary btn-lg" data-nav>Try SIP Calculator</a>
+                <a href="/about.html" class="btn btn-secondary btn-lg" data-nav>Learn More</a>
             </div>
             <div class="hero-stats">
                 <div class="hero-stat">
@@ -128,6 +128,90 @@ export function renderHome() {
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="section" id="guide">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Financial Literacy</span>
+                <h2 class="section-title">Mastering Your Personal Finances</h2>
+                <p class="section-subtitle">Actionable frameworks and proven principles to build sustainable wealth, eliminate debt, and optimize taxes.</p>
+            </div>
+            <div class="content-section" style="max-width:900px;margin:0 auto var(--space-8)">
+                <h2>The 50/30/20 Budgeting Rule</h2>
+                <p>One of the most effective personal finance guidelines is the 50/30/20 budgeting framework popularized by Senator Elizabeth Warren. It breaks down your net post-tax income into three distinct pillars:</p>
+                <ul>
+                    <li><strong>50% for Needs:</strong> Essential living expenses including rent or home loan EMI, groceries, utilities, basic insurance, and transportation.</li>
+                    <li><strong>30% for Wants:</strong> Discretionary spending that enhances quality of life, such as dining out, hobbies, streaming subscriptions, vacations, and shopping.</li>
+                    <li><strong>20% for Savings & Debt Reduction:</strong> High-priority savings including emergency funds, retirement accounts, mutual fund SIPs, and accelerated loan repayments.</li>
+                </ul>
+
+                <h2>The Miracle of Compound Interest</h2>
+                <p>Albert Einstein famously remarked that compound interest is the eighth wonder of the world. In traditional simple interest, earnings remain flat because interest is computed only on the principal amount. In compound interest, your earnings generate their own earnings in subsequent periods.</p>
+                <div class="formula-box">A = P × (1 + r/n)^(n×t)</div>
+                <p>The single most dominant variable in compounding is not the amount of capital, but <strong>time</strong>. An investor starting a monthly SIP of ₹5,000 at age 25 will accumulate significantly more wealth by age 55 than an investor contributing ₹10,000 monthly starting at age 35, even though the late investor deposits more principal.</p>
+
+                <h2>Smart Debt Management: Snowball vs. Avalanche</h2>
+                <p>When repaying multiple debts (personal loans, credit card balances, car loans), choosing a structured methodology keeps you disciplined and reduces financial stress:</p>
+                <ul>
+                    <li><strong>The Debt Avalanche Method:</strong> Focuses on paying off the debt with the highest interest rate first while paying minimums on others. Mathematically, this minimizes total interest paid.</li>
+                    <li><strong>The Debt Snowball Method:</strong> Focuses on eliminating the smallest loan balance first regardless of interest rate. This delivers rapid psychological wins and momentum.</li>
+                </ul>
+
+                <h2>Tax Planning & Regime Optimization</h2>
+                <p>Taxes are often the single largest annual expense for salaried and self-employed professionals. Under the latest fiscal policies, evaluating whether the Old Regime or the New Tax Regime is more advantageous requires comparing your eligible Chapter VI-A deductions (Section 80C, 80D, HRA, home loan interest) against the concessional tax slabs of the New Regime. Use our dedicated <a href="/calculators/income-tax.html">Income Tax Calculator</a> to determine your optimal choice.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions regarding our calculation algorithms, data security, and tool accuracy.</p>
+            </div>
+            <div style="max-width:900px;margin:0 auto">
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('open')">
+                            <span>Are the calculations on FinCalc Pro completely accurate?</span>
+                            <span class="faq-chevron">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes. All calculation models use standard banking algorithms and recognized financial formulas (such as reducing-balance EMI models, compound interest formulas, and official tax slabs). For precise institutional figures, factors such as loan processing fees and bank-specific rounding may cause minor variances.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('open')">
+                            <span>Is my personal or financial data stored on your servers?</span>
+                            <span class="faq-chevron">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">No. DevToolHubs / FinCalc Pro operates on a 100% client-side execution model. All calculations, numbers, and inputs are processed locally in your browser memory. We never store, log, or transmit your financial inputs to any remote server.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('open')">
+                            <span>Can I use these calculators on my smartphone or tablet?</span>
+                            <span class="faq-chevron">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes. Every calculator is designed with a responsive interface that adapts seamlessly to desktop monitors, tablets, and mobile smartphones with touch-friendly sliders and instant dynamic charts.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('open')">
+                            <span>Are these financial tools completely free to use?</span>
+                            <span class="faq-chevron">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes. All 10+ calculators and educational resources are 100% free with no subscriptions, premium tiers, or registration requirements.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>`;
 }
 
@@ -182,7 +266,7 @@ export function renderAbout() {
             <p><strong style="color:var(--text-primary)">Transparency:</strong> We show you the formulas behind every calculation. No black boxes, no mysterious algorithms — just clear math you can verify yourself.</p>
 
             <h2>Contact Us</h2>
-            <p>Have questions, suggestions, or found a bug? We'd love to hear from you! Reach out at <a href="mailto:${SITE_EMAIL}">${SITE_EMAIL}</a> or visit our <a href="#/contact" data-nav>Contact page</a>.</p>
+            <p>Have questions, suggestions, or found a bug? We'd love to hear from you! Reach out at <a href="mailto:${SITE_EMAIL}">${SITE_EMAIL}</a> or visit our <a href="/contact.html" data-nav>Contact page</a>.</p>
         </div>
     </div>`;
 }
@@ -323,26 +407,21 @@ export function renderPrivacyPolicy() {
                 </ul>
                 <p>You can control cookies through your browser settings. Disabling cookies may affect some site functionality.</p>
 
-                <h2>4. Third-Party Services</h2>
-                <p>We may use third-party services that collect information, including:</p>
+                <h2>4. Third-Party Advertising & Google AdSense</h2>
+                <p>We use third-party advertising companies, including Google LLC, to serve ads when you visit our website.</p>
+                <p><strong>Google AdSense & DoubleClick DART Cookies:</strong></p>
                 <ul>
-                    <li><strong>Google Analytics:</strong> Web analytics service. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
-                    <li><strong>Google AdSense:</strong> Advertising service that may use cookies to serve personalized ads. <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads Policy</a></li>
+                    <li>Google, as a third-party vendor, uses cookies to serve advertisements on <strong>devtoolhubs.info</strong>.</li>
+                    <li>Google's use of advertising cookies (including the DART cookie) enables it and its partners to serve personalized ads to our users based on their visits to this site and other sites on the Internet.</li>
+                    <li>Users may opt out of personalized advertising by visiting <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ads Settings</a> or by visiting the Digital Advertising Alliance at <a href="https://optout.aboutads.info" target="_blank" rel="noopener">optout.aboutads.info</a>.</li>
+                    <li>For more information on how Google uses data from partner sites, please review <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google's Partner Privacy Policy</a>.</li>
                 </ul>
 
                 <h2>5. Data Security</h2>
                 <p>We implement appropriate technical and organizational security measures to protect your information. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p>
 
-                <h2>6. Your Rights (GDPR)</h2>
-                <p>If you are a resident of the European Economic Area, you have the following rights:</p>
-                <ul>
-                    <li>Right to access your personal data</li>
-                    <li>Right to rectification of inaccurate data</li>
-                    <li>Right to erasure of your data</li>
-                    <li>Right to restrict processing</li>
-                    <li>Right to data portability</li>
-                    <li>Right to object to processing</li>
-                </ul>
+                <h2>6. Your Rights (GDPR & CCPA)</h2>
+                <p>If you are a resident of the European Economic Area (EEA) or California (CCPA), you have rights regarding your personal information, including the right to access, rectify, or delete your data, or opt-out of personal information sale (note: we do not sell personal data).</p>
                 <p>To exercise any of these rights, please contact us at <a href="mailto:${SITE_EMAIL}">${SITE_EMAIL}</a>.</p>
 
                 <h2>7. Children's Privacy</h2>
@@ -352,7 +431,7 @@ export function renderPrivacyPolicy() {
                 <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
 
                 <h2>9. Contact Us</h2>
-                <p>If you have questions about this Privacy Policy, please contact us at <a href="mailto:${SITE_EMAIL}">${SITE_EMAIL}</a> or visit our <a href="#/contact" data-nav>Contact page</a>.</p>
+                <p>If you have questions about this Privacy Policy, please contact us at <a href="mailto:${SITE_EMAIL}">${SITE_EMAIL}</a> or visit our <a href="/contact.html" data-nav>Contact page</a>.</p>
             </div>
         </div>
     </div>`;
@@ -585,9 +664,9 @@ export function renderSitemap() {
                 <div class="sitemap-section">
                     <h3>📄 Main Pages</h3>
                     <ul>
-                        <li><a href="#/" data-nav>→ Home</a></li>
-                        <li><a href="#/about" data-nav>→ About Us</a></li>
-                        <li><a href="#/contact" data-nav>→ Contact Us</a></li>
+                        <li><a href="/" data-nav>→ Home</a></li>
+                        <li><a href="/about.html" data-nav>→ About Us</a></li>
+                        <li><a href="/contact.html" data-nav>→ Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -618,7 +697,7 @@ export function renderNotFound() {
         <div class="error-code">404</div>
         <h1>Page Not Found</h1>
         <p>Oops! The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
-        <a href="#/" class="btn btn-primary btn-lg" data-nav>← Back to Home</a>
+        <a href="/" class="btn btn-primary btn-lg" data-nav>← Back to Home</a>
         <div class="popular-links" style="margin-top:var(--space-8)">
             <span style="color:var(--text-muted);font-size:var(--fs-sm);width:100%;margin-bottom:var(--space-2)">Popular calculators:</span>
             ${CALCULATORS.slice(0, 5).map(c => `<a href="${c.path}" data-nav>${c.icon} ${c.shortName}</a>`).join('')}

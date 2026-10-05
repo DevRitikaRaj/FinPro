@@ -1,6 +1,12 @@
 User-agent: *
 Allow: /
-Sitemap: https://fincalcpro.com/sitemap.xml
 
-# Crawl-delay for polite crawling
-Crawl-delay: 1
+# Googlebot & Mediapartners crawler access
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Sitemap Index
+Sitemap: https://devtoolhubs.info/sitemap.xml

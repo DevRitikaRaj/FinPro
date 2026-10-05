@@ -21,7 +21,7 @@ export function formatNum(num, decimals = 0) {
 
 // ---- Header ----
 export function renderHeader() {
-    const currentHash = window.location.hash || '#/';
+    const currentPath = typeof window !== 'undefined' ? (window.location.pathname || '/') : '/';
 
     const dropdownItems = CALCULATORS.map(c => `
         <a href="${c.path}" class="dropdown-item" data-nav>
@@ -33,23 +33,23 @@ export function renderHeader() {
     return `
     <header class="site-header" id="site-header">
         <div class="header-inner">
-            <a href="#/" class="header-logo" data-nav>
+            <a href="/" class="header-logo" data-nav>
                 <span class="logo-icon">F</span>
                 <span class="logo-text">Fin<span>Calc</span> Pro</span>
             </a>
 
             <nav class="header-nav" id="header-nav">
-                <a href="#/" class="nav-link ${currentHash === '#/' ? 'active' : ''}" data-nav>Home</a>
+                <a href="/" class="nav-link ${currentPath === '/' ? 'active' : ''}" data-nav>Home</a>
                 <div class="nav-dropdown">
-                    <a href="#/" class="nav-link ${currentHash.includes('/calculators') ? 'active' : ''}" onclick="event.preventDefault()">
+                    <a href="/#calculators" class="nav-link ${currentPath.includes('/calculators') ? 'active' : ''}">
                         Calculators <span style="font-size:10px;margin-left:2px">▼</span>
                     </a>
                     <div class="dropdown-menu" id="calc-dropdown">
                         ${dropdownItems}
                     </div>
                 </div>
-                <a href="#/about" class="nav-link ${currentHash === '#/about' ? 'active' : ''}" data-nav>About</a>
-                <a href="#/contact" class="nav-link ${currentHash === '#/contact' ? 'active' : ''}" data-nav>Contact</a>
+                <a href="/about.html" class="nav-link ${currentPath.includes('about') ? 'active' : ''}" data-nav>About</a>
+                <a href="/contact.html" class="nav-link ${currentPath.includes('contact') ? 'active' : ''}" data-nav>Contact</a>
             </nav>
 
             <button class="header-search-btn" id="search-btn" type="button" aria-label="Search calculators">
@@ -63,9 +63,9 @@ export function renderHeader() {
         </div>
 
         <nav class="mobile-nav" id="mobile-nav">
-            <a href="#/" class="mobile-nav-link" data-nav>🏠 Home</a>
-            <a href="#/about" class="mobile-nav-link" data-nav>ℹ️ About</a>
-            <a href="#/contact" class="mobile-nav-link" data-nav>✉️ Contact</a>
+            <a href="/" class="mobile-nav-link" data-nav>🏠 Home</a>
+            <a href="/about.html" class="mobile-nav-link" data-nav>ℹ️ About</a>
+            <a href="/contact.html" class="mobile-nav-link" data-nav>✉️ Contact</a>
             <div class="mobile-nav-section-title">Calculators</div>
             ${CALCULATORS.map(c => `
                 <a href="${c.path}" class="mobile-nav-link" data-nav>${c.icon} ${c.name}</a>
@@ -91,11 +91,11 @@ export function renderFooter() {
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#/" class="header-logo" data-nav style="margin-bottom:4px;display:inline-flex">
+                    <a href="/" class="header-logo" data-nav style="margin-bottom:4px;display:inline-flex">
                         <span class="logo-icon">F</span>
                         <span class="logo-text">Fin<span>Calc</span> Pro</span>
                     </a>
-                    <p>Free, accurate financial calculators trusted by thousands. Make smarter money decisions with our easy-to-use tools.</p>
+                    <p>Free, accurate financial calculators trusted by thousands. Make smarter money decisions with our easy-to-use tools at devtoolhubs.info.</p>
                     <div class="footer-social">
                         <a href="#" aria-label="Twitter" title="Twitter">𝕏</a>
                         <a href="#" aria-label="Facebook" title="Facebook">f</a>
@@ -112,9 +112,9 @@ export function renderFooter() {
                 <div class="footer-column">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="#/about" data-nav>About Us</a></li>
-                        <li><a href="#/contact" data-nav>Contact Us</a></li>
-                        <li><a href="#/sitemap" data-nav>Sitemap</a></li>
+                        <li><a href="/about.html" data-nav>About Us</a></li>
+                        <li><a href="/contact.html" data-nav>Contact Us</a></li>
+                        <li><a href="/sitemap.html" data-nav>Sitemap</a></li>
                     </ul>
                 </div>
 
@@ -125,11 +125,12 @@ export function renderFooter() {
             </div>
 
             <div class="footer-bottom">
-                <span>© ${year} ${SITE_NAME}. All rights reserved.</span>
+                <span>© ${year} ${SITE_NAME} (devtoolhubs.info). All rights reserved.</span>
                 <div class="footer-bottom-links">
-                    <a href="#/privacy-policy" data-nav>Privacy</a>
-                    <a href="#/terms-conditions" data-nav>Terms</a>
-                    <a href="#/sitemap" data-nav>Sitemap</a>
+                    <a href="/privacy-policy.html" data-nav>Privacy</a>
+                    <a href="/terms-conditions.html" data-nav>Terms</a>
+                    <a href="/disclaimer.html" data-nav>Disclaimer</a>
+                    <a href="/sitemap.html" data-nav>Sitemap</a>
                 </div>
             </div>
         </div>
@@ -142,11 +143,12 @@ export function renderBreadcrumbs(path) {
         return '';
     }
 
-    const segments = path.split('/').filter(Boolean);
-    let crumbs = [{ label: 'Home', path: '#/' }];
+    const cleanPath = path.replace(/^\//, '').replace(/\.html$/, '');
+    const segments = cleanPath.split('/').filter(Boolean);
+    let crumbs = [{ label: 'Home', path: '/' }];
 
     if (segments[0] === 'calculators') {
-        crumbs.push({ label: 'Calculators', path: '#/' });
+        crumbs.push({ label: 'Calculators', path: '/#calculators' });
         if (segments[1]) {
             const calc = CALCULATORS.find(c => c.id === segments[1]);
             crumbs.push({ label: calc ? calc.name : segments[1], path: null });
@@ -168,7 +170,7 @@ export function renderBreadcrumbs(path) {
         "@type": "ListItem",
         "position": i + 1,
         "name": c.label,
-        "item": c.path ? c.path : undefined
+        "item": c.path ? (c.path.startsWith('http') ? c.path : `https://devtoolhubs.info${c.path}`) : undefined
     }));
 
     return `
@@ -375,7 +377,8 @@ export function renderFAQ(items, schemaId) {
 // ---- Share Buttons ----
 export function renderShareButtons(title, url) {
     const encodedTitle = encodeURIComponent(title);
-    const encodedUrl = encodeURIComponent(url || window.location.href);
+    const pageUrl = url || (typeof window !== 'undefined' ? window.location.href : 'https://devtoolhubs.info');
+    const encodedUrl = encodeURIComponent(pageUrl);
 
     return `
     <div class="share-section">
@@ -412,7 +415,8 @@ export function renderRelatedTools(currentId) {
 
 // ---- Update Meta Tags ----
 export function updateMeta(title, description) {
-    document.title = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} — Free Financial Calculators & Tools`;
+    if (typeof document === 'undefined') return;
+    document.title = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} — Free Financial Calculators & Tools | DevToolHubs`;
     const descMeta = document.querySelector('meta[name="description"]');
     if (descMeta) descMeta.setAttribute('content', description || '');
 

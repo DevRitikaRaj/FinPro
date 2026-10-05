@@ -3,9 +3,9 @@
    ============================================================ */
 
 export const SITE_NAME = 'FinCalc Pro';
-export const SITE_TAGLINE = 'Free Financial Calculators & Tools';
-export const SITE_EMAIL = 'contact@fincalcpro.com';
-export const SITE_URL = 'https://fincalcpro.com';
+export const SITE_TAGLINE = 'Free Financial Calculators & Tools | DevToolHubs';
+export const SITE_EMAIL = 'contact@devtoolhubs.info';
+export const SITE_URL = 'https://devtoolhubs.info';
 
 // ---- Calculator Registry ----
 export const CALCULATORS = [
@@ -14,7 +14,7 @@ export const CALCULATORS = [
         name: 'SIP Calculator',
         shortName: 'SIP',
         icon: '📈',
-        path: '#/calculators/sip',
+        path: '/calculators/sip.html',
         description: 'Calculate returns on your Systematic Investment Plan (SIP) and watch your investments grow over time.',
         shortDesc: 'Calculate SIP returns & wealth growth',
         category: 'Investment',
@@ -25,7 +25,7 @@ export const CALCULATORS = [
         name: 'Loan Calculator',
         shortName: 'Loan',
         icon: '🏦',
-        path: '#/calculators/loan',
+        path: '/calculators/loan.html',
         description: 'Compute EMI, total interest, and amortization schedules for any type of loan with flexible tenure options.',
         shortDesc: 'EMI & amortization for any loan',
         category: 'Loan',
@@ -36,7 +36,7 @@ export const CALCULATORS = [
         name: 'Home Loan EMI Calculator',
         shortName: 'Home Loan',
         icon: '🏠',
-        path: '#/calculators/home-loan-emi',
+        path: '/calculators/home-loan-emi.html',
         description: 'Plan your dream home purchase by calculating monthly EMIs, total interest, and year-wise breakdowns.',
         shortDesc: 'Home loan EMI with down payment',
         category: 'Loan',
@@ -47,7 +47,7 @@ export const CALCULATORS = [
         name: 'Personal Loan EMI Calculator',
         shortName: 'Personal Loan',
         icon: '💳',
-        path: '#/calculators/personal-loan-emi',
+        path: '/calculators/personal-loan-emi.html',
         description: 'Find your personal loan EMI instantly. Compare scenarios with and without prepayment.',
         shortDesc: 'Personal loan EMI & prepayment',
         category: 'Loan',
@@ -58,7 +58,7 @@ export const CALCULATORS = [
         name: 'FD Calculator',
         shortName: 'FD',
         icon: '🔒',
-        path: '#/calculators/fd',
+        path: '/calculators/fd.html',
         description: 'Calculate maturity amount and interest earned on your Fixed Deposit with various compounding options.',
         shortDesc: 'Fixed deposit maturity & interest',
         category: 'Investment',
@@ -69,7 +69,7 @@ export const CALCULATORS = [
         name: 'RD Calculator',
         shortName: 'RD',
         icon: '🪙',
-        path: '#/calculators/rd',
+        path: '/calculators/rd.html',
         description: 'Estimate your Recurring Deposit maturity value and total interest earned over the investment period.',
         shortDesc: 'Recurring deposit maturity value',
         category: 'Investment',
@@ -80,7 +80,7 @@ export const CALCULATORS = [
         name: 'Mutual Fund Returns Calculator',
         shortName: 'Mutual Fund',
         icon: '📊',
-        path: '#/calculators/mutual-fund',
+        path: '/calculators/mutual-fund.html',
         description: 'Project your mutual fund returns for both SIP and lumpsum investments with growth visualization.',
         shortDesc: 'SIP & lumpsum return projections',
         category: 'Investment',
@@ -91,7 +91,7 @@ export const CALCULATORS = [
         name: 'Income Tax Calculator',
         shortName: 'Income Tax',
         icon: '📋',
-        path: '#/calculators/income-tax',
+        path: '/calculators/income-tax.html',
         description: 'Calculate your income tax liability under both Old and New tax regimes. Compare and save more.',
         shortDesc: 'Old vs New regime tax comparison',
         category: 'Tax',
@@ -102,7 +102,7 @@ export const CALCULATORS = [
         name: 'GST Calculator',
         shortName: 'GST',
         icon: '🧾',
-        path: '#/calculators/gst',
+        path: '/calculators/gst.html',
         description: 'Quickly add or remove GST from any amount. Get CGST/SGST split for all standard GST rates.',
         shortDesc: 'Add or remove GST instantly',
         category: 'Tax',
@@ -113,7 +113,7 @@ export const CALCULATORS = [
         name: 'Currency Converter',
         shortName: 'Currency',
         icon: '💱',
-        path: '#/calculators/currency-converter',
+        path: '/calculators/currency-converter.html',
         description: 'Convert between major world currencies with indicative exchange rates and popular conversion pairs.',
         shortDesc: 'Convert between world currencies',
         category: 'Utility',
@@ -198,16 +198,16 @@ export const GST_RATES = [5, 12, 18, 28];
 
 // ---- Navigation Links ----
 export const NAV_LINKS = [
-    { label: 'Home', path: '#/' },
-    { label: 'Calculators', path: '#/calculators', dropdown: true },
-    { label: 'About', path: '#/about' },
-    { label: 'Contact', path: '#/contact' },
+    { label: 'Home', path: '/' },
+    { label: 'Calculators', path: '/#calculators', dropdown: true },
+    { label: 'About', path: '/about.html' },
+    { label: 'Contact', path: '/contact.html' },
 ];
 
 export const LEGAL_PAGES = [
-    { label: 'Privacy Policy', path: '#/privacy-policy' },
-    { label: 'Terms & Conditions', path: '#/terms-conditions' },
-    { label: 'Disclaimer', path: '#/disclaimer' },
-    { label: 'Cookie Policy', path: '#/cookie-policy' },
-    { label: 'DMCA Policy', path: '#/dmca-policy' },
+    { label: 'Privacy Policy', path: '/privacy-policy.html' },
+    { label: 'Terms & Conditions', path: '/terms-conditions.html' },
+    { label: 'Disclaimer', path: '/disclaimer.html' },
+    { label: 'Cookie Policy', path: '/cookie-policy.html' },
+    { label: 'DMCA Policy', path: '/dmca-policy.html' },
 ];

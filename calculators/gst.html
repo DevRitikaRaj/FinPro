@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBXLVTLXBZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GBXLVTLXBZ');
+    </script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3837874977890769"
+         crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator — Add or Remove GST (5%, 12%, 18%, 28%) | FinCalc Pro</title>
+    <meta name="description" content="Quickly calculate inclusive and exclusive GST amounts. Get instant CGST, SGST, and IGST breakdowns for goods and services in India.">
+    <meta name="keywords" content="GST calculator, add GST, remove GST, reverse GST calculator, 18% GST calculator, CGST SGST calculator">
+    <meta name="author" content="FinCalc Pro | DevToolHubs">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#060a14">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="GST Calculator — Add or Remove GST (5%, 12%, 18%, 28%) | FinCalc Pro">
+    <meta property="og:description" content="Quickly calculate inclusive and exclusive GST amounts. Get instant CGST, SGST, and IGST breakdowns for goods and services in India.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devtoolhubs.info/calculators/gst.html">
+    <meta property="og:site_name" content="FinCalc Pro">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GST Calculator — Add or Remove GST (5%, 12%, 18%, 28%) | FinCalc Pro">
+    <meta name="twitter:description" content="Quickly calculate inclusive and exclusive GST amounts. Get instant CGST, SGST, and IGST breakdowns for goods and services in India.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://devtoolhubs.info/calculators/gst.html">
+
+    <!-- Favicon (inline SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='18' width='100' height='100' fill='%23060a14'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='%23f0b429' font-family='sans-serif' font-weight='bold'>F</text></svg>">
+
+    <!-- Google Fonts — Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "GST Calculator — Add or Remove GST (5%, 12%, 18%, 28%)",
+  "url": "https://devtoolhubs.info/calculators/gst.html",
+  "description": "Quickly calculate inclusive and exclusive GST amounts. Get instant CGST, SGST, and IGST breakdowns for goods and services in India.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FinCalc Pro",
+    "url": "https://devtoolhubs.info"
+  }
+}
+    </script>
+</head>
+<body>
+    <div id="app">
+        
+    <header class="site-header" id="site-header">
+        <div class="header-inner">
+            <a href="/" class="header-logo" data-nav>
+                <span class="logo-icon">F</span>
+                <span class="logo-text">Fin<span>Calc</span> Pro</span>
+            </a>
+
+            <nav class="header-nav" id="header-nav">
+                <a href="/" class="nav-link active" data-nav>Home</a>
+                <div class="nav-dropdown">
+                    <a href="/#calculators" class="nav-link ">
+                        Calculators <span style="font-size:10px;margin-left:2px">▼</span>
+                    </a>
+                    <div class="dropdown-menu" id="calc-dropdown">
+                        
+        <a href="/calculators/sip.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">📈</span>
+            <span>SIP Calculator</span>
+        </a>
+    
+        <a href="/calculators/loan.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">🏦</span>
+            <span>Loan Calculator</span>
+        </a>
+    
+        <a href="/calculators/home-loan-emi.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">🏠</span>
+            <span>Home Loan EMI Calculator</span>
+        </a>
+    
+        <a href="/calculators/personal-loan-emi.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">💳</span>
+            <span>Personal Loan EMI Calculator</span>
+        </a>
+    
+        <a href="/calculators/fd.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">🔒</span>
+            <span>FD Calculator</span>
+        </a>
+    
+        <a href="/calculators/rd.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">🪙</span>
+            <span>RD Calculator</span>
+        </a>
+    
+        <a href="/calculators/mutual-fund.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">📊</span>
+            <span>Mutual Fund Returns Calculator</span>
+        </a>
+    
+        <a href="/calculators/income-tax.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">📋</span>
+            <span>Income Tax Calculator</span>
+        </a>
+    
+        <a href="/calculators/gst.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">🧾</span>
+            <span>GST Calculator</span>
+        </a>
+    
+        <a href="/calculators/currency-converter.html" class="dropdown-item" data-nav>
+            <span class="dropdown-item-icon">💱</span>
+            <span>Currency Converter</span>
+        </a>
+    
+                    </div>
+                </div>
+                <a href="/about.html" class="nav-link " data-nav>About</a>
+                <a href="/contact.html" class="nav-link " data-nav>Contact</a>
+            </nav>
+
+            <button class="header-search-btn" id="search-btn" type="button" aria-label="Search calculators">
+                <span>🔍 Search…</span>
+                <kbd class="search-kbd">Ctrl+K</kbd>
+            </button>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" type="button" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="/" class="mobile-nav-link" data-nav>🏠 Home</a>
+            <a href="/about.html" class="mobile-nav-link" data-nav>ℹ️ About</a>
+            <a href="/contact.html" class="mobile-nav-link" data-nav>✉️ Contact</a>
+            <div class="mobile-nav-section-title">Calculators</div>
+            
+                <a href="/calculators/sip.html" class="mobile-nav-link" data-nav>📈 SIP Calculator</a>
+            
+                <a href="/calculators/loan.html" class="mobile-nav-link" data-nav>🏦 Loan Calculator</a>
+            
+                <a href="/calculators/home-loan-emi.html" class="mobile-nav-link" data-nav>🏠 Home Loan EMI Calculator</a>
+            
+                <a href="/calculators/personal-loan-emi.html" class="mobile-nav-link" data-nav>💳 Personal Loan EMI Calculator</a>
+            
+                <a href="/calculators/fd.html" class="mobile-nav-link" data-nav>🔒 FD Calculator</a>
+            
+                <a href="/calculators/rd.html" class="mobile-nav-link" data-nav>🪙 RD Calculator</a>
+            
+                <a href="/calculators/mutual-fund.html" class="mobile-nav-link" data-nav>📊 Mutual Fund Returns Calculator</a>
+            
+                <a href="/calculators/income-tax.html" class="mobile-nav-link" data-nav>📋 Income Tax Calculator</a>
+            
+                <a href="/calculators/gst.html" class="mobile-nav-link" data-nav>🧾 GST Calculator</a>
+            
+                <a href="/calculators/currency-converter.html" class="mobile-nav-link" data-nav>💱 Currency Converter</a>
+            
+        </nav>
+    </header>
+        
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-modal">
+            <div class="search-modal-input-wrap">
+                <span>🔍</span>
+                <input type="text" class="search-modal-input" id="search-input"
+                       placeholder="Search calculators…" autocomplete="off">
+                <kbd class="search-kbd" style="cursor:pointer" id="search-close">Esc</kbd>
+            </div>
+            <div class="search-results" id="search-results"></div>
+        </div>
+    </div>
+        <main id="main-content">
+            
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <div class="container"><a href="/" data-nav>Home</a><span class="separator">›</span><a href="/#calculators" data-nav>Calculators</a><span class="separator">›</span><span class="current">GST Calculator</span></div>
+    </nav>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://devtoolhubs.info/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://devtoolhubs.info/#calculators"},{"@type":"ListItem","position":3,"name":"GST Calculator"}]}</script>
+            <div class="calc-page"><div class="container">
+        <div class="calc-page-header animate-fade-up">
+            <h1><span class="page-icon">🧾</span> GST Calculator</h1>
+            <p class="page-desc">Quickly add or remove GST from any amount. Get the CGST/SGST or IGST split for all standard GST rates used in India.</p>
+        </div>
+
+        <div class="calc-widget animate-fade-up">
+            <div class="calc-inputs">
+                <h3 style="margin-bottom:var(--space-6);color:var(--text-heading)">GST Calculation</h3>
+                <div class="toggle-group">
+                    <button class="toggle-btn active" id="gst-add-btn" onclick="window.__gstToggle('add')">Add GST</button>
+                    <button class="toggle-btn" id="gst-remove-btn" onclick="window.__gstToggle('remove')">Remove GST</button>
+                </div>
+                <div class="input-group">
+                    <label class="input-label"><span id="gst-amt-label">Amount (Excluding GST)</span></label>
+                    <div class="input-with-addon">
+                        <span class="input-addon">₹</span>
+                        <input type="number" class="input-field" id="gst-amount" value="10000" min="0" step="1">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label class="input-label">GST Rate</label>
+                    <div class="toggle-group" style="margin-bottom:0">
+                        <button class="toggle-btn " onclick="document.getElementById('gst-rate').value=5;window.__gstCalc();document.querySelectorAll('.gst-rate-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')" class="gst-rate-btn">5%</button><button class="toggle-btn " onclick="document.getElementById('gst-rate').value=12;window.__gstCalc();document.querySelectorAll('.gst-rate-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')" class="gst-rate-btn">12%</button><button class="toggle-btn active" onclick="document.getElementById('gst-rate').value=18;window.__gstCalc();document.querySelectorAll('.gst-rate-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')" class="gst-rate-btn">18%</button><button class="toggle-btn " onclick="document.getElementById('gst-rate').value=28;window.__gstCalc();document.querySelectorAll('.gst-rate-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')" class="gst-rate-btn">28%</button>
+                    </div>
+                    <input type="hidden" id="gst-rate" value="18">
+                </div>
+                <button class="btn btn-primary btn-lg" style="width:100%;margin-top:var(--space-6)" onclick="window.__gstCalc()">Calculate GST</button>
+            </div>
+            <div class="calc-results">
+                <div class="result-cards" style="grid-template-columns:1fr 1fr">
+                    <div class="result-card"><div class="result-card-label" id="gst-base-label">Base Amount</div><div class="result-card-value" id="gst-base">—</div></div>
+                    <div class="result-card"><div class="result-card-label">GST Amount</div><div class="result-card-value" id="gst-tax">—</div></div>
+                    <div class="result-card"><div class="result-card-label">CGST</div><div class="result-card-value" id="gst-cgst">—</div></div>
+                    <div class="result-card"><div class="result-card-label">SGST</div><div class="result-card-value" id="gst-sgst">—</div></div>
+                </div>
+                <div class="result-card highlight" style="margin-top:var(--space-4)">
+                    <div class="result-card-label" id="gst-total-label">Total Amount (Incl. GST)</div>
+                    <div class="result-card-value" id="gst-total">—</div>
+                </div>
+                <div class="chart-container"><canvas id="gst-chart"></canvas></div>
+                <div class="chart-legend">
+                    <div class="chart-legend-item"><span class="chart-legend-dot" style="background:#06b6d4"></span> Base Amount</div>
+                    <div class="chart-legend-item"><span class="chart-legend-dot" style="background:#f0b429"></span> GST</div>
+                </div>
+            </div>
+        </div>
+
+        
+    <div class="share-section">
+        <span>📤 Share this tool:</span>
+        <div class="share-btns">
+            <button class="share-btn" title="Share on Twitter" onclick="window.open('https://twitter.com/intent/tweet?text=GST%20Calculator%20-%20FinCalc%20Pro&url=https%3A%2F%2Fdevtoolhubs.info', '_blank', 'width=550,height=420')">𝕏</button>
+            <button class="share-btn" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevtoolhubs.info', '_blank', 'width=550,height=420')">f</button>
+            <button class="share-btn" title="Share on LinkedIn" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdevtoolhubs.info', '_blank', 'width=550,height=420')">in</button>
+            <button class="share-btn" title="Share on WhatsApp" onclick="window.open('https://wa.me/?text=GST%20Calculator%20-%20FinCalc%20Pro%20https%3A%2F%2Fdevtoolhubs.info', '_blank')">💬</button>
+            <button class="share-btn" title="Copy link" onclick="navigator.clipboard.writeText(window.location.href).then(()=>this.textContent='✓').catch(()=>{})">🔗</button>
+        </div>
+    </div>
+
+        <div class="content-section">
+            <h2>📖 What is GST?</h2>
+            <p>Goods and Services Tax (GST) is a comprehensive indirect tax levied on the supply of goods and services in India, implemented on July 1, 2017. It replaced multiple cascading taxes like VAT, service tax, excise duty, and others, creating a unified tax structure.</p>
+            <p>GST is a destination-based tax, meaning it is levied at the point of consumption rather than the point of origin. For intra-state transactions, GST is split equally into CGST (Central) and SGST (State). For inter-state transactions, IGST (Integrated GST) is charged.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>📐 GST Formulas</h2>
+            <div class="formula-box">
+                Add GST: Total = Amount × (1 + GST%/100)<br>
+                Remove GST: Base = Amount / (1 + GST%/100)
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>✅ GST Rate Categories</h2>
+            <ul>
+                <li><strong>5% GST:</strong> Essential items — packaged food, footwear below ₹1000, economy train tickets</li>
+                <li><strong>12% GST:</strong> Standard items — processed food, business class air tickets, cell phones</li>
+                <li><strong>18% GST:</strong> Most goods & services — electronics, financial services, restaurants, IT services</li>
+                <li><strong>28% GST:</strong> Luxury & sin goods — luxury cars, tobacco, aerated drinks, cement</li>
+            </ul>
+        </div>
+
+        
+    <div class="content-section">
+        <h2>❓ Frequently Asked Questions</h2>
+        <div class="faq-list">
+        <div class="faq-item" id="faq-gst-0">
+            <button class="faq-question" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('open'); this.setAttribute('aria-expanded', this.parentElement.classList.contains('open'))">
+                <span>What is the difference between CGST, SGST, and IGST?</span>
+                <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">CGST (Central GST) and SGST (State GST) are levied on intra-state supplies. Each is half of the total GST rate. IGST (Integrated GST) is levied on inter-state supplies and equals the full GST rate.</div>
+            </div>
+        </div>
+    
+        <div class="faq-item" id="faq-gst-1">
+            <button class="faq-question" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('open'); this.setAttribute('aria-expanded', this.parentElement.classList.contains('open'))">
+                <span>How do I know which GST rate applies?</span>
+                <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">GST rates are determined by the HSN (Harmonized System of Nomenclature) code for goods and SAC (Services Accounting Code) for services. You can look up the applicable rate on the GST portal.</div>
+            </div>
+        </div>
+    
+        <div class="faq-item" id="faq-gst-2">
+            <button class="faq-question" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('open'); this.setAttribute('aria-expanded', this.parentElement.classList.contains('open'))">
+                <span>Can I claim GST input tax credit?</span>
+                <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">Yes, registered businesses can claim ITC on GST paid on purchases used for business purposes. This reduces the net GST liability. Proper invoicing and filing are required.</div>
+            </div>
+        </div>
+    
+        <div class="faq-item" id="faq-gst-3">
+            <button class="faq-question" type="button" aria-expanded="false" onclick="this.parentElement.classList.toggle('open'); this.setAttribute('aria-expanded', this.parentElement.classList.contains('open'))">
+                <span>Is GST applicable on all goods and services?</span>
+                <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">No. Some items are exempt from GST, including fresh fruits and vegetables, milk, eggs, bread, and certain healthcare and educational services.</div>
+            </div>
+        </div>
+    </div>
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between CGST, SGST, and IGST?","acceptedAnswer":{"@type":"Answer","text":"CGST (Central GST) and SGST (State GST) are levied on intra-state supplies. Each is half of the total GST rate. IGST (Integrated GST) is levied on inter-state supplies and equals the full GST rate."}},{"@type":"Question","name":"How do I know which GST rate applies?","acceptedAnswer":{"@type":"Answer","text":"GST rates are determined by the HSN (Harmonized System of Nomenclature) code for goods and SAC (Services Accounting Code) for services. You can look up the applicable rate on the GST portal."}},{"@type":"Question","name":"Can I claim GST input tax credit?","acceptedAnswer":{"@type":"Answer","text":"Yes, registered businesses can claim ITC on GST paid on purchases used for business purposes. This reduces the net GST liability. Proper invoicing and filing are required."}},{"@type":"Question","name":"Is GST applicable on all goods and services?","acceptedAnswer":{"@type":"Answer","text":"No. Some items are exempt from GST, including fresh fruits and vegetables, milk, eggs, bread, and certain healthcare and educational services."}}]}</script>
+    </div>
+
+        
+    <div class="related-tools">
+        <h2>Related Calculators</h2>
+        <div class="related-tools-grid">
+            
+                <a href="/calculators/sip.html" class="calc-card" data-nav>
+                    <div class="calc-card-icon">📈</div>
+                    <h3>SIP Calculator</h3>
+                    <p>Calculate SIP returns & wealth growth</p>
+                    <span class="calc-card-cta">Calculate now →</span>
+                </a>
+            
+                <a href="/calculators/loan.html" class="calc-card" data-nav>
+                    <div class="calc-card-icon">🏦</div>
+                    <h3>Loan Calculator</h3>
+                    <p>EMI & amortization for any loan</p>
+                    <span class="calc-card-cta">Calculate now →</span>
+                </a>
+            
+                <a href="/calculators/home-loan-emi.html" class="calc-card" data-nav>
+                    <div class="calc-card-icon">🏠</div>
+                    <h3>Home Loan EMI Calculator</h3>
+                    <p>Home loan EMI with down payment</p>
+                    <span class="calc-card-cta">Calculate now →</span>
+                </a>
+            
+                <a href="/calculators/personal-loan-emi.html" class="calc-card" data-nav>
+                    <div class="calc-card-icon">💳</div>
+                    <h3>Personal Loan EMI Calculator</h3>
+                    <p>Personal loan EMI & prepayment</p>
+                    <span class="calc-card-cta">Calculate now →</span>
+                </a>
+            
+        </div>
+    </div>
+    </div></div>
+        </main>
+        
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="header-logo" data-nav style="margin-bottom:4px;display:inline-flex">
+                        <span class="logo-icon">F</span>
+                        <span class="logo-text">Fin<span>Calc</span> Pro</span>
+                    </a>
+                    <p>Free, accurate financial calculators trusted by thousands. Make smarter money decisions with our easy-to-use tools at devtoolhubs.info.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter" title="Twitter">𝕏</a>
+                        <a href="#" aria-label="Facebook" title="Facebook">f</a>
+                        <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
+                        <a href="#" aria-label="YouTube" title="YouTube">▶</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Calculators</h4>
+                    <ul><li><a href="/calculators/sip.html" data-nav>SIP Calculator</a></li><li><a href="/calculators/loan.html" data-nav>Loan Calculator</a></li><li><a href="/calculators/home-loan-emi.html" data-nav>Home Loan EMI Calculator</a></li><li><a href="/calculators/personal-loan-emi.html" data-nav>Personal Loan EMI Calculator</a></li><li><a href="/calculators/fd.html" data-nav>FD Calculator</a></li><li><a href="/calculators/rd.html" data-nav>RD Calculator</a></li></ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about.html" data-nav>About Us</a></li>
+                        <li><a href="/contact.html" data-nav>Contact Us</a></li>
+                        <li><a href="/sitemap.html" data-nav>Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul><li><a href="/privacy-policy.html" data-nav>Privacy Policy</a></li><li><a href="/terms-conditions.html" data-nav>Terms & Conditions</a></li><li><a href="/disclaimer.html" data-nav>Disclaimer</a></li><li><a href="/cookie-policy.html" data-nav>Cookie Policy</a></li><li><a href="/dmca-policy.html" data-nav>DMCA Policy</a></li></ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 FinCalc Pro (devtoolhubs.info). All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="/privacy-policy.html" data-nav>Privacy</a>
+                    <a href="/terms-conditions.html" data-nav>Terms</a>
+                    <a href="/disclaimer.html" data-nav>Disclaimer</a>
+                    <a href="/sitemap.html" data-nav>Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    <div class="cookie-consent" id="cookie-consent">
+        <h4>🍪 Cookie Notice</h4>
+        <p>We use cookies to improve your experience. By continuing to use this site, you agree to our <a href="#/cookie-policy" data-nav>Cookie Policy</a>.</p>
+        <div class="cookie-consent-actions">
+            <button class="btn btn-primary btn-sm" id="cookie-accept">Accept All</button>
+            <button class="btn btn-secondary btn-sm" id="cookie-decline">Decline</button>
+        </div>
+    </div>
+    </div>
+
+    <!-- App Scripts (ES Modules) -->
+    <script type="module" src="/js/page-init.js"></script>
+</body>
+</html>
